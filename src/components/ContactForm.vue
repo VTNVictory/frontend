@@ -16,8 +16,7 @@
         name="email"
         type="email"
         class="form-control"
-        v
-        model="contactLocal.email"
+        v-model="contactLocal.email"
       />
       <ErrorMessage name="email" class="error-feedback" />
     </div>
@@ -27,8 +26,7 @@
         name="address"
         type="text"
         class="form-control"
-        v
-        model="contactLocal.address"
+        v-model="contactLocal.address"
       />
       <ErrorMessage name="address" class="error-feedback" />
     </div>
@@ -38,8 +36,7 @@
         name="phone"
         type="tel"
         class="form-control"
-        v
-        model="contactLocal.phone"
+        v-model="contactLocal.phone"
       />
       <ErrorMessage name="phone" class="error-feedback" />
     </div>
@@ -48,8 +45,7 @@
         name="favorite"
         type="checkbox"
         class="form-check-input"
-        v
-        model="contactLocal.favorite"
+        v-model="contactLocal.favorite"
       />
       <label for="favorite" class="form-check-label">
         <strong>Liên hệ yêu thích</strong>
@@ -73,8 +69,8 @@
 </template>
 <script>
 import * as yup from "yup";
-import { Form, Field, ErrorMessage } from "vee-validate";
 
+import { Form, Field, ErrorMessage } from "vee-validate";
 export default {
   components: {
     Form,
@@ -131,7 +127,6 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 @import "@/assets/form.css";
 </style>
